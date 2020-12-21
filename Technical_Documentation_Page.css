@@ -35,11 +35,12 @@ text-align: center;
   list-style-type: none;
 }
 
+
 header {
   font-family: 'Langar', cursive;
   font-family: 'Roboto Mono', monospace;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 a:link, a:visited, a:active {
@@ -56,10 +57,40 @@ font-family: 'Langar', cursive;
 font-family: 'Roboto Mono', monospace;
 color: black;
 }
-section li {
+
+code {
   font-family: 'Langar', cursive;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+}
 
-font-family: 'Quicksand', sans-serif;
+.highlight {
+  text-shadow: 1px 2px 2px;
+}
 
-font-family: 'Roboto Mono', monospace;
+@media screen and (max-width: 600px) {
+  #navbar ul {
+      text-align: center;
+  }
+
+  #navbar li {
+    padding-left: 70px;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    max-height: 320px;
+    border-bottom: 1px solid;
+
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 340px;
+  }
 }
